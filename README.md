@@ -109,10 +109,15 @@ For a more thorough statistical background on classification and regression, ple
   Choose the type of learning that best corresponds to each of the following statements.
 
 1)Labelled training and test examples Ans = supervised learning
+
 2)Using knowledge from one task to solve another task Ans = transfer learning
+
 3)Learning to navigate a robot Ans = reinforcement learning
+
 4)Deciding which examples are needed to learn Ans =  active learning
+
 5)Data with no annotation Ans = unsupervised learning
+
 6)Training and test examples with limited annotation Ans = semi-supervised learning
 
   
