@@ -94,13 +94,13 @@ What is the meaning of the "hypothesis space"? Ans = the set of possible classif
 
 # 7. Different Kinds of Supervised Learning: classification vs regression   
 
- ** classification vs regression**
+ **Classification vs regression**
     
    Classification maps feature vectors to categories. The number of categories need not be two - they can be as many as needed. Regression maps feature vectors to real numbers. There are other kinds of supervised learning as well.
 
 For a more thorough statistical background on classification and regression, please check out the following links. [Classification Regression](https://en.wikipedia.org/wiki/Regression_analysis)
 
-  ** Classification or Regression? 1**
+  **Classification or Regression? 1**
 
   Question 1: We want to come up with a classifier that classifies each news article into one of the following categories: politics, sports, entertainment. Is this a classification problem or a regression problem? Ans = classification
 
