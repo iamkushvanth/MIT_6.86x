@@ -27,7 +27,7 @@ More specifically, in supervised learning, we hypothesize a collection of functi
 
  **5. A Concrete Example of a Supervised Learning Task**
 
-    **Feature Vector Demystified 1**
+   **Feature Vector Demystified 1**
 
 We have a movie recommending system that reads description of each movie and determines some important characteristics of the movie. In particular, it examines whether each of the criterion below is true for that movie:
 
@@ -44,11 +44,11 @@ The system converts "yes" into 1, "no" into 0, and makes a feature vector **X** 
 Question 1: Now we have a comedy movie that is not an action movie, that was not directed by Spielberg, that does not have dinosaurs in it, but was produced by Disney. What is this movie's feature vector?
 Ans = \big [1,0,0,0,1\big ]
 
-    **Feature Vector Demystified 2**
+   **Feature Vector Demystified 2**
 
 Question 2: What is the dimension of the feature vector of this movie? Ans = 5
 
-    **Training Set vs Test Set 1**
+  **Training Set vs Test Set 1**
 
 The ultimate goal of our recommending system is to predict whether John will like this movie. Now suppose our movie recommending system knows whether John likes or dislikes the following movies:
 
@@ -67,11 +67,11 @@ Assume that, when John evaluates movies, he only does so based on the five crite
 
 Question 1: What is the label of movie 1, based on the fact that John likes the movie? Ans = 1
 
-    **Training Set vs Test Set 2**
+  **Training Set vs Test Set 2**
 
 Question 2: What movies are in the training set? Select all those apply. Ans = movie 1,2,3,4
 
-    **Training Set vs Test Set 3**
+  **Training Set vs Test Set 3**
 
 Question 3: What movies are in the test set? Select all those apply. Ans = movie 5,6,7
 
@@ -79,17 +79,17 @@ Question 3: What movies are in the test set? Select all those apply. Ans = movie
 
 Training data can be graphically depicted on a (hyper)plane. Classifiers are mappings that take feature vectors as input and produce labels as output. A common kind of classifier is the linear classifier, which linearly divides space(the (hyper)plane where training data lies) into two. Given a point **X** in the space, the classifier **h** outputs **h(x) = 1**  or **h(x) = 1** , depending on where the point **X** exists in among the two linearly divided spaces.
 
-     **Linear Classifier**
+  **Linear Classifier**
 We have a linear classifier **h** that takes in any point on a two-dimensional space. The linear classifier **h** divides the two-dimensional space into two, such that on one side **h(x) = +1** and on the other side **h(x) = -1**, as depicted below.
 
 ![image](https://github.com/iamkushvanth/MIT_6.86x/assets/160105601/589273b1-0ca0-4b15-ace3-a80399709966)
 
 For x = (10,10) , would h(x) be -1 or +1 ? Ans = +1
 
-     **Training Error**
+  **Training Error**
 Suppose a classifier correctly classifies 5 points in the training set and 1 points in the test set. Suppose it incorrectly classifies 5 points in the training set and 2 points in the test set. What is the training error? Is it better than chance? Ans = 0.5, equal to chance
 
-    ** Hypothesis Space**
+   ** Hypothesis Space**
 What is the meaning of the "hypothesis space"? Ans = the set of possible classifiers
 
 # 7. Different Kinds of Supervised Learning: classification vs regression   
@@ -100,7 +100,7 @@ What is the meaning of the "hypothesis space"? Ans = the set of possible classif
 
 For a more thorough statistical background on classification and regression, please check out the following links. [Classification Regression](https://en.wikipedia.org/wiki/Regression_analysis)
 
-    ** Classification or Regression? 1**
+  ** Classification or Regression? 1**
 
   Question 1: We want to come up with a classifier that classifies each news article into one of the following categories: politics, sports, entertainment. Is this a classification problem or a regression problem? Ans = classification
 
