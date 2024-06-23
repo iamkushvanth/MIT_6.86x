@@ -92,7 +92,7 @@ Suppose a classifier correctly classifies 5 points in the training set and 1 poi
    ** Hypothesis Space**
 What is the meaning of the "hypothesis space"? Ans = the set of possible classifiers
 
-# 7. Different Kinds of Supervised Learning: classification vs regression   
+ **7. Different Kinds of Supervised Learning: classification vs regression**   
 
  **Classification vs regression**
     
@@ -120,4 +120,91 @@ For a more thorough statistical background on classification and regression, ple
 
 6)Training and test examples with limited annotation Ans = semi-supervised learning
 
-  
+# Lecture 2. Linear Classifier and Perceptron  
+
+**1. Objectives**
+
+Linear Classifiers and Perceptron Algorithm
+
+At the end of this lecture, you will be able to
+
+> understand the concepts of Feature vectors and labels, Training set and Test set, Classifier, Training error, Test error, and the Set of classifiers
+
+> derive the mathematical presentation of linear classifiers
+
+> understand the intuitive and formal definition of linear separation
+
+> use the perceptron algorithm with and without offset
+
+**2. Review of Basic Concepts**
+
+**Concept Review Problem: car accident prediction 1**
+In this problem, we will put ourselves in the shoes of a car insurance company. Our goal is to find out whether customers were involved in an accident on July 4th, 1998.
+For 8 customers, we know the following information:
+
+1. number of accidents the customer made in the past.
+2. number of miles the customer has driven.
+3. the customer's age
+
+Also, for 5 of the customers, we know whether each of them was involved in an accident on July 4th, 1998.
+If we want to learn a model in a supervised way, what is n, the number of training examples? n= 5
+
+**Concept Review Problem: car accident prediction 2**
+
+The insurance company recorded relevant information for all 8 customers, as illustrated in the table below.
+            number of past accidents |	miles customer drove so far |	customer's age	
+customer 1		         0             |          2710.9	            |     21
+customer 2		         2             |          13209.2	            |     40
+customer 3		         1             |          89001.4             |     32
+customer 4		         3             |          12381.1	            |     18
+customer 5	           0             |          1893.5	            |     24
+customer 6	           2	           |          32493.5	            |     24
+customer 7	           1 	           |          5443.5	            |     30
+customer 8	           0	           |          4493.5	            |     28
+What is the dimension of each feature vector? d= 3
+
+**Concept Review Problem: car accident prediction 3**
+
+How many feature vectors are there in the above table? Ans = 8
+
+**Concept Review Problem: Classifier and Training Error 1**
+
+Assume we have training data and a classifier like the following: (where h(x) denotes the value outputted by the classifier with the data point as input)
+ h(  x , y )
+data 1	1	1
+data 2	-1	1
+data 3	1	1
+data 4	1	-1
+data 5	-1	-1
+
+What is the training error? E_n(h) = 0.6
+
+**Concept Review Problem: Classifier and Training Error 2**
+
+Now let's examine the training error E_n(h)  in a general sense. E_n(h)  is a function of: (choose all those apply)
+Ans = n, the number of training data
+      h , the classifier
+
+      
+**3. Linear Classifiers Mathematically Revisited**
+
+**Linear Classifiers Mathematically Revisited**
+
+**Inner product and Orthogonal vectors**
+What is the inner product of [0,1,1]  and [1,1,1] ? Ans = 2
+
+**Linear Classifier Practice**
+We saw in the lecture above that for a linear classifier h , h(x;\theta ) = sign(\theta \cdot x), i.e. the sign of the dot product of \theta and x . Now consider \theta which is given by
+\theta = (1,-1)  (4.1)
+Which of the following points would be classified as positive by ? Please choose all correct answers. Ans = (1,0)
+
+**Offset Added**
+Again, we have a linear classifier with \theta given by
+\theta = (1,-1)  (4.2)
+and the offset, \theta_0 given by \theta =-1 Now which of the following points would be classified as positive by \theta ? Please choose all correct answers. Ans = (1,-1)
+
+
+
+
+
+
